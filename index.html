@@ -28,10 +28,11 @@
 
     <br>
     <p id="kostnad" style="color: rgb(70, 133, 70);"></p>
-    <p id="bensin"></p>
-    <p id="vinst"></p>
     <p id="taxi" style="color: rgb(160, 38, 38);"></p>
     <br>
+    
+    <p id="bensin" style="margin-top:1000px;"></p>
+    <p id="vinst"></p>
 
     <script>
         let submitBtn = document.getElementById("submit");
@@ -42,8 +43,8 @@
 
             e.preventDefault();
             document.getElementById("kostnad").innerText = "Pris till kund: " + (kilometer.value * 4) + " kr";
-            //document.getElementById("bensin").innerText = "Bensinkostnad: " + (kilometer.value * 1.12) + " kr";
-            //document.getElementById("vinst").innerText = "Vinst: " + ((kilometer.value * 4) - (kilometer.value * 1.12)) + " kr";
+            document.getElementById("bensin").innerText = "Bensinkostnad: " + (kilometer.value * 1.12) + " kr";
+            document.getElementById("vinst").innerText = "Vinst: " + ((kilometer.value * 4) - (kilometer.value * 1.12)) + " kr";
             document.getElementById("taxi").innerText = "Vanlig taxipris: " + (kilometer.value * 16) + " kr";
         }
     </script>
