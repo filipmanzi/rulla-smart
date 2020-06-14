@@ -42,9 +42,9 @@
             let kilometer = document.getElementById("kilometer");
 
             e.preventDefault();
-            document.getElementById("kostnad").innerText = "Pris till kund: " + (kilometer.value * 4) + " kr";
+            document.getElementById("kostnad").innerText = "Pris till kund: " + (kilometer.value * 6) + " kr";
             document.getElementById("bensin").innerText = "Bensinkostnad: " + (kilometer.value * 1.12) + " kr";
-            document.getElementById("vinst").innerText = "Vinst: " + ((kilometer.value * 4) - (kilometer.value * 1.12)) + " kr";
+            document.getElementById("vinst").innerText = "Vinst: " + ((kilometer.value * 6) - (kilometer.value * 1.12)) + " kr";
             document.getElementById("taxi").innerText = "Vanlig taxipris: " + (kilometer.value * 16) + " kr";
         }
     </script>
